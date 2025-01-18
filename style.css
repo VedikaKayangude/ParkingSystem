@@ -1,0 +1,444 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-image: url('imgs.jpg'); /* Set your background image here */
+    background-size: cover; /* Make the image cover the entire background */
+    background-position: center; /* Center the background image */
+   
+  }
+  
+  /* Login/Signup Page */
+  /* Login/Signup Page */
+/* Login/Signup Page */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('imgs.jpg'); /* Add the background image here */
+    background-size: cover;
+   
+    background-position: center;
+    position: relative;
+  }
+  
+  /* Apply the blur effect to the background */
+  .login-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent overlay to enhance the blur effect */
+    backdrop-filter: blur(100px); /* Apply blur effect */
+    z-index: -1; /* Ensure the blur effect is behind the content */
+  }
+  
+  /* Form Styling */
+  .form {
+    background: #111;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(135, 247, 135, 0.276), 0px 0px 20px rgba(150, 150, 221, 0.966); /* Gradient shadow */
+    text-align: center;
+    border: 5px solid transparent; /* Added border for gradient effect */
+    background-clip: padding-box; /* Ensure border is applied outside background */
+    position: relative;
+  }
+  
+  /* Form Shadow Effect */
+  .form::before {
+    content: '';
+    position: absolute;
+    top: -5px; /* Adjust for desired shadow effect */
+    left: -5px; /* Adjust for desired shadow effect */
+    right: -5px; /* Adjust for desired shadow effect */
+    bottom: -5px; /* Adjust for desired shadow effect */
+    border-radius: 15px;
+    background: linear-gradient(45deg, rgba(0, 255, 0, 0.3), rgba(0, 0, 255, 0.3)); /* Gradient border color */
+    z-index: -1; /* Send it behind the form */
+  }
+  
+  .form input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .form button {
+    background-color: #25ab25; /* Green button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .form button:hover {
+    background-color: #28a745; /* Darker green on hover */
+    color: #fff;
+  }
+  
+  .form a {
+    color: rgb(13, 206, 42);
+    text-decoration: none;
+  }
+  
+  /* Main Page Styling */
+  .main-page {
+    background-image: url('imgage.png'); /* Set your background image here */
+    background-size: cover; /* Make the image cover the entire background */
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Navbar Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #ffffff;
+
+    padding: 5px;
+}
+
+header .logo h1 {
+    font-size: 2em;
+    color: rgb(14, 1, 13);
+    font-family: 'Arial', sans-serif;
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #fff;
+
+    text-decoration: none;
+    font-size: 1em;
+    padding: 1px;
+    background-color: rgb(220, 220, 220);
+    border-radius: 2px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    padding: 200px 0;
+    
+    text-align: center;
+}
+
+
+.hero h2 {
+    font-size: 2.5em;
+    color: #fff4f4;
+}
+
+.hero .post-button {
+    background-color: rgb(83, 80, 80);
+    border: none;
+
+
+    
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #000;
+
+    transition: background-color 0.3s;
+}
+
+.hero .post-button:hover {
+    background-color: #f5f9f6;
+    color: #fff;
+}
+
+/* Main Page Styling */
+.main-page {
+  background-image: url('imgage.png'); /* Main background image */
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Updated Navbar Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #333, #111); /* Gradient background */
+  padding: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header .logo h1 {
+  font-size: 1.8em;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9em;
+  padding: 10px;
+  background-color: #555;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #333734;
+  transform: scale(1.05);
+
+}
+
+
+
+/* Hero Section */
+.hero {
+  padding: 100px 0;
+  text-align: center;
+  background-color: rgba(17, 17, 17, 0.7); /* Overlay effect */
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+.hero .small-text {
+  font-size: 2em; /* Increased the font size */
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+
+.hero h2 {
+  font-size: 3em;
+  color: #fff4f4;
+  margin-bottom: 20px;
+
+
+}
+
+
+.hero .post-button {
+
+  background-color: rgb(92, 87, 87);
+  border: none;
+
+
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: #fff9f9;
+  border-radius: 5px;
+
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero .post-button:hover {
+  background-color: #3a3838;
+  color: #fff5f5;
+  transform: scale(1.05);
+}
+
+/* New Features Section */
+.featured-look {
+  margin-top: 80px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.187);
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.featured-look h3 {
+  font-size: 2.5em;
+
+  color: #fff;
+}
+
+.featured-look p {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+.trending-section {
+  margin-top: 20px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.trending-section h3 {
+  font-size: 2.2em;
+  color: #fff;
+  margin-bottom:
+
+   20px;
+}
+
+.trending-section .trend-item {
+
+  display: inline-block;
+  margin: 15px;
+  padding: 15px;
+  background-color: #d4cfcf;
+  border-radius: 10px;
+  color: #000000;
+  transition: trans
+  form 0.3s;
+}
+
+.trending-section .trend-item:hover {
+  transform: scale(1.05);
+}
+
+
+.testimonials {
+  background-color: #222;
+  padding: 40px;
+  margin-top: 50px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.testimonials h3 {
+  font-size: 2em;
+  color: #fff;
+}
+
+.testimonials p {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+/* Gradient Background */
+body {
+    background: linear-gradient(to right, #7a797a, #e7edeb); /* Example gradient colors */
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .parking-lots {
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black overlay */
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+  }
+  
+  .parking-lots h2 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+
+
+  /* Parking Lots Section */
+.parking-lots {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+  }
+  
+  .parking-lots h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  .parking-lot {
+    background-color: #222;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: left;
+  }
+  
+  .parking-lot h3 {
+    font-size: 2em;
+  }
+  
+  .parking-lot p {
+    font-size: 1.2em;
+    color: #ccc;
+  }
+  
+  .book-now-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  .book-now-button:hover {
+    background-color: #3a3838;
+    transform: scale(1.05);
+  }
+  /* Parking Lot List Styling */
+
+  
+  /* Parking Lot List Styling */
+
+  /* Parking Time Alert Styling */
+#parkingTimeAlert {
+    background-color: #FF0000; /* Red background */
+    color: #FFF;
+    padding: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  

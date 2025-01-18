@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ParkEzy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Login/Signup Page -->
+  <div class="login-page" id="loginPage">
+    <div class="form">
+      <h2>Login</h2>
+      <input type="text" placeholder="Username" id="username">
+      <input type="password" placeholder="Password" id="password">
+      <button onclick="login()">Login</button>
+      <p>Don't have an account?</p>
+      <p><a href="#">Register your car</a></p>
+      <p><a href="#">Register your house rental</a></p>
+    </div>
+  </div>
+
+  <!-- Main Website Page (Initially Hidden) -->
+  <div class="main-page" id="mainPage" style="display: none;">
+    
+    <!-- Navbar -->
+    <header>
+      <div class="logo">
+        <h1> 𝒫𝒜𝑅𝒦𝐸𝒵𝒴</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">FIND NEARBY PETROL PUMP</a></li>
+          <li><a href="#">FIND NEARBY EV CHARGING STATION</a></li>
+          <li><a href="#">FIND NEARBY MECHANIC</a></li>
+          <li><a href="#"> PROFILE </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>𝘠𝘰𝘶𝘳 𝘴𝘮𝘢𝘳𝘵 𝘱𝘢𝘳𝘬𝘪𝘯𝘨 𝘢𝘯𝘥 𝘙𝘦𝘯𝘵𝘢𝘭 𝘚𝘰𝘭𝘶𝘵𝘪𝘰𝘯</h2>
+      <p class="text">​BOOK YOUR PARKING SPACE IN ADVANCE!!​</p>
+      <button class="post-button" onclick="window.location.href='parking-lots.html'">FIND NEARBY PARKING LOT</button>
+
+    </section>
+
+    <!-- Featured Look Section -->
+    <section class="featured-look">
+      <h3>Features of PARKEZY</h3>
+      <p>Explore premium parking spaces and locations curated for your convenience.</p>
+      <p>See which parking lots have available spaces in real-time</p>
+    </section>
+
+    <!-- Trending Fashion Section -->
+    <section class="featured-look">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq-item">
+          <h4>How do I book a parking spot?</h4>
+          <p>Simply log in, search for a nearby parking lot, and click on "Book Now" to secure your spot.</p>
+        </div>
+        <div class="faq-item">
+          <h4>Can I cancel my booking?</h4>
+          <p>Yes, you can cancel your booking up to 24 hours before your reserved time without any charges.</p>
+        </div>
+        <div class="faq-item">
+          <h4>How do I make payments?</h4>
+          <p>We accept various payment methods including credit cards, PayPal, and digital wallets.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <h3>User Testimonials</h3>
+      <p>"ParkEzy made it so easy to find a parking spot near my office. I no longer have to circle around looking for parking!"</p>
+      <p>"I love how I can book my parking spot in advance. It saves me so much time, especially during rush hour!"</p>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
